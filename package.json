@@ -1,0 +1,45 @@
+{
+  "name": "neutrino-typescript-react-example",
+  "version": "1.0.0",
+  "description": "Example Neutrino TypeScript React project",
+  "scripts": {
+    "build": "webpack --mode production",
+    "lint": "eslint --format codeframe --ext mjs,jsx,js,tsx,ts src test && tsc",
+    "start": "webpack-dev-server --mode development --open",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidje13/neutrino-typescript-react-example.git"
+  },
+  "author": "David Evans",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidje13/neutrino-typescript-react-example/issues"
+  },
+  "homepage": "https://github.com/davidje13/neutrino-typescript-react-example#readme",
+  "dependencies": {
+    "react": "16.x",
+    "react-dom": "16.x"
+  },
+  "devDependencies": {
+    "@neutrinojs/eslint": "^9.0.0-rc.5",
+    "@neutrinojs/jest": "^9.0.0-rc.5",
+    "@neutrinojs/node": "^9.0.0-rc.5",
+    "@neutrinojs/react": "9.0.0-rc.5",
+    "@testing-library/react": "9.x",
+    "@types/jest": "24.x",
+    "@types/react": "16.x",
+    "@types/react-dom": "16.x",
+    "eslint": "6.x",
+    "eslint-plugin-react": "^7.17.0",
+    "jest": "24.x",
+    "neutrino": "^9.0.0-rc.5",
+    "neutrino-typescript": "git+https://github.com/davidje13/neutrino-typescript.git#semver:^1.0.8",
+    "neutrino-typescript-eslint": "git+https://github.com/davidje13/neutrino-typescript-eslint.git#semver:^1.0.3",
+    "typescript": "3.7.x",
+    "webpack": "4.x",
+    "webpack-cli": "3.x",
+    "webpack-dev-server": "3.x"
+  }
+}

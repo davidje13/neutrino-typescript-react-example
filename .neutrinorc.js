@@ -6,7 +6,12 @@ const eslint = require('@neutrinojs/eslint');
 
 module.exports = {
   use: [
-    typescript(),
+    typescript({ tsconfig: {
+      compilerOptions: {
+        strict: true,
+        allowJs: true,
+      },
+    } }),
     typescriptLint(),
     eslint({ eslint: { baseConfig: { extends: [
       'eslint:recommended',

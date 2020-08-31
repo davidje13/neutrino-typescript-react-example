@@ -4,7 +4,9 @@
   "private": true,
   "description": "Example Neutrino TypeScript React project",
   "scripts": {
+    "prebuild": "rewrite-tsconfig",
     "build": "webpack --mode production",
+    "prelint": "rewrite-tsconfig",
     "lint": "eslint --format codeframe --ext mjs,jsx,js,tsx,ts src test && tsc",
     "start": "webpack-dev-server --mode development --open",
     "test": "jest"
